@@ -1,0 +1,313 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 5 0 R 7 0 R ] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [ 0 0 595 842 ] /Contents 6 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 4404 >>
+stream
+BT
+/F2 12 Tf
+0.050 0.450 0.850 rg
+1 0 0 1 45 790 Tm
+(SWAMI TOURS & TRAVELS - GUHAGAR, RATNAGIRI, MUMBAI) Tj
+/F2 20 Tf
+0.070 0.100 0.180 rg
+1 0 0 1 45 774 Tm
+(Netlify Deployment & Hosting Complete Guide) Tj
+/F1 10 Tf
+0.400 0.450 0.550 rg
+1 0 0 1 45 747 Tm
+(Complete step-by-step instructions for deploying and running your live website) Tj
+/F1 8 Tf
+0.800 0.800 0.800 rg
+1 0 0 1 45 722 Tm
+(------------------------------------------------------------------------------------------------------------------------------------------------) Tj
+/F2 13 Tf
+0.050 0.450 0.850 rg
+1 0 0 1 45 700 Tm
+(1. OVERVIEW & CURRENT PROJECT STRUCTURE) Tj
+/F1 9.5 Tf
+0.100 0.100 0.100 rg
+1 0 0 1 45 683 Tm
+(Your project is a high-performance modern static web application optimized for Vite & Netlify.) Tj
+/F1 9.5 Tf
+0.100 0.100 0.100 rg
+1 0 0 1 45 671 Tm
+(Key files ready for production deployment:) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 659 Tm
+(  - index.html \(Main Home Page with 22 Routes, Fare Estimator & Modal Quote Popup\)) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 647 Tm
+(  - netlify.toml \(Netlify Build & Routing configuration file\)) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 635 Tm
+(  - _headers \(Production security headers: X-Frame-Options, Strict SSL, Referrer\)) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 623 Tm
+(  - package.json & vite.config.ts \(Vite high-speed bundle compiler\)) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 611 Tm
+(  - assets/ \(CSS styles, JavaScript business logic, images, icons\)) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 599 Tm
+(  - Legal pages: privacy-policy.html, terms-and-conditions.html, disclaimer.html) Tj
+/F2 13 Tf
+0.050 0.450 0.850 rg
+1 0 0 1 45 575 Tm
+(2. STEP-BY-STEP NETLIFY DEPLOYMENT METHODS) Tj
+/F1 9.5 Tf
+0.100 0.100 0.100 rg
+1 0 0 1 45 558 Tm
+(You can deploy your website on Netlify in two very simple ways:) Tj
+/F2 11 Tf
+0.100 0.600 0.300 rg
+1 0 0 1 45 534 Tm
+(METHOD A: Direct Drag & Drop \(Fastest - 1 Minute, No Git Required\)) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 520 Tm
+(  Step 1: On your machine, run the build command in terminal:  npm run build) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 508 Tm
+(  Step 2: This creates a production-ready folder named 'dist/' containing all optimized files.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 496 Tm
+(  Step 3: Open your web browser and go to: https://app.netlify.com) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 484 Tm
+(  Step 4: Sign in or create a free Netlify account using your Email or Google account.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 472 Tm
+(  Step 5: Go to the 'Sites' tab and scroll down to 'Want to deploy a new site without Git?'.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 460 Tm
+(  Step 6: Simply drag and drop your 'dist' folder into the upload dropzone box.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 448 Tm
+(  Step 7: Netlify will immediately upload and launch your website with a free HTTPS .netlify.app link!) Tj
+/F2 11 Tf
+0.100 0.600 0.300 rg
+1 0 0 1 45 424 Tm
+(METHOD B: GitHub Continuous Deployment \(Recommended for Automatic Updates\)) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 410 Tm
+(  Step 1: Upload your project files to a GitHub repository \(e.g. github.com/your-name/swami-tours\).) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 398 Tm
+(  Step 2: Log in to Netlify, click 'Add new site' -> 'Import an existing project'.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 386 Tm
+(  Step 3: Select 'GitHub' and authorize Netlify to access your repository.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 374 Tm
+(  Step 4: Select your repository. Netlify will auto-detect the configuration from netlify.toml.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 362 Tm
+(  Step 5: Click 'Deploy Swami Tours'. Every future code push will auto-update your live site!) Tj
+/F2 13 Tf
+0.050 0.450 0.850 rg
+1 0 0 1 45 338 Tm
+(3. NETLIFY BUILD CONFIGURATION SETTINGS) Tj
+/F1 9.5 Tf
+0.100 0.100 0.100 rg
+1 0 0 1 45 321 Tm
+(If Netlify asks you for build settings manually during setup, enter these exact values:) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 309 Tm
+(  - Base directory: \(leave blank / root\)) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 297 Tm
+(  - Build command: npm run build) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 285 Tm
+(  - Publish directory: dist) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 273 Tm
+(  - Functions directory: \(leave empty\)) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [ 0 0 595 842 ] /Contents 8 0 R /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 3897 >>
+stream
+BT
+/F2 12 Tf
+0.050 0.450 0.850 rg
+1 0 0 1 45 790 Tm
+(SWAMI TOURS & TRAVELS - NETLIFY GUIDE \(PAGE 2\)) Tj
+/F2 18 Tf
+0.070 0.100 0.180 rg
+1 0 0 1 45 774 Tm
+(Netlify Forms, Custom Domain & WhatsApp Integration) Tj
+/F1 8 Tf
+0.800 0.800 0.800 rg
+1 0 0 1 45 738 Tm
+(------------------------------------------------------------------------------------------------------------------------------------------------) Tj
+/F2 13 Tf
+0.050 0.450 0.850 rg
+1 0 0 1 45 716 Tm
+(4. CONNECTING YOUR CUSTOM DOMAIN \(e.g. www.swamitours.com\)) Tj
+/F1 9.5 Tf
+0.100 0.100 0.100 rg
+1 0 0 1 45 699 Tm
+(You can easily link your custom domain \(purchased on GoDaddy, Namecheap, or Hostinger\):) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 687 Tm
+(  Step 1: In your Netlify dashboard, navigate to Site Configuration -> Domain Management.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 675 Tm
+(  Step 2: Click 'Add custom domain' and type your domain name \(e.g. swamitours.in\).) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 663 Tm
+(  Step 3: Update your DNS Records in GoDaddy / Hostinger with these values:) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 651 Tm
+(          * A Record: Point '@' to 75.2.60.5 \(Netlify Load Balancer IP\)) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 639 Tm
+(          * CNAME Record: Point 'www' to your-site-name.netlify.app) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 627 Tm
+(  Step 4: Netlify will automatically generate a 100% Free SSL Certificate \(HTTPS\) within minutes!) Tj
+/F2 13 Tf
+0.050 0.450 0.850 rg
+1 0 0 1 45 603 Tm
+(5. RECEIVING BOOKING ENQUIRIES VIA NETLIFY FORMS) Tj
+/F1 9.5 Tf
+0.100 0.100 0.100 rg
+1 0 0 1 45 586 Tm
+(Your index.html booking form is pre-configured with Netlify Forms integration:) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 574 Tm
+(  - The form includes name='swami-booking' and data-netlify='true' attributes.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 562 Tm
+(  - Whenever a visitor submits a booking on your site, Netlify catches it automatically.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 550 Tm
+(  - To receive instant Email notifications whenever someone submits a booking:) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 538 Tm
+(      1. Open Netlify Dashboard -> Site Configuration -> Forms.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 526 Tm
+(      2. Click 'Add notification' -> 'Email notification'.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 514 Tm
+(      3. Enter your email \(tawaderushi173@gmail.com\).) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 502 Tm
+(      4. You will get immediate email alerts with customer pickup, drop, and phone number!) Tj
+/F2 13 Tf
+0.050 0.450 0.850 rg
+1 0 0 1 45 478 Tm
+(6. FARE ESTIMATOR & DRIVER ALLOWANCE SUMMARY \(UPDATED\)) Tj
+/F1 9.5 Tf
+0.100 0.100 0.100 rg
+1 0 0 1 45 461 Tm
+(Your live estimator is configured with 22 routes and the simplified driver allowance slabs:) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 449 Tm
+(  - Distance up to 500 km: Driver Allowance = Rs 1,500) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 437 Tm
+(  - Distance above 500 km: Driver Allowance = Rs 2,000) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 425 Tm
+(  - Applicable for both Round Trip and One-Way Drop options.) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 413 Tm
+(  - Direct 1-Click WhatsApp booking linked directly to: +91 70838 08483.) Tj
+/F2 13 Tf
+0.050 0.450 0.850 rg
+1 0 0 1 45 389 Tm
+(7. SUPPORT & BUSINESS DETAILS) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 372 Tm
+(  - Business Name: Swami Tours & Travels \(Guhagar, Ratnagiri, Mumbai Hub\)) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 360 Tm
+(  - Primary Contact: +91 70838 08483) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 348 Tm
+(  - Fleet: Black Ertiga \(6+1\), White WagonR \(4+1\), 20 & 26 Seater Force Tempo Travellers) Tj
+/F1 9 Tf
+0.200 0.200 0.200 rg
+1 0 0 1 45 336 Tm
+(  - Deployment Ready File: Netlify configuration verified and compiled.) Tj
+ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000123 00000 n 
+0000000220 00000 n 
+0000000322 00000 n 
+0000000460 00000 n 
+0000004916 00000 n 
+0000005054 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+9003
+%%EOF

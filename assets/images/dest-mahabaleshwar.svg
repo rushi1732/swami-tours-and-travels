@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mbSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="60%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#fed7aa" />
+    </linearGradient>
+    <linearGradient id="hillGreen1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#166534" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+    <linearGradient id="hillGreen2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#mbSky)" />
+  <circle cx="480" cy="140" r="45" fill="#fef08a" opacity="0.9" />
+  
+  <!-- Sahyadri Table Land & Pratapgad Ridge -->
+  <path d="M 0 250 L 110 200 L 220 230 L 340 180 L 460 220 L 600 170 L 600 400 L 0 400 Z" fill="url(#hillGreen1)" opacity="0.8" />
+  <path d="M 0 310 Q 180 250 360 270 T 600 240 L 600 400 L 0 400 Z" fill="url(#hillGreen2)" />
+  
+  <!-- Lingmala / Venna Lake Reflection -->
+  <path d="M 120 340 Q 280 320 440 330 Q 560 340 600 360 L 600 400 L 0 400 Z" fill="#0369a1" opacity="0.4" />
+  
+  <!-- Strawberry Plantation Icons -->
+  <g fill="#ef4444">
+    <circle cx="80" cy="350" r="5" />
+    <circle cx="160" cy="360" r="5" />
+    <circle cx="240" cy="345" r="5" />
+    <circle cx="320" cy="355" r="5" />
+    <circle cx="400" cy="350" r="5" />
+  </g>
+  <g fill="#15803d">
+    <path d="M 80 345 L 77 341 L 83 341 Z" />
+    <path d="M 160 355 L 157 351 L 163 351 Z" />
+    <path d="M 240 340 L 237 336 L 243 336 Z" />
+    <path d="M 320 350 L 317 346 L 323 346 Z" />
+    <path d="M 400 345 L 397 341 L 403 341 Z" />
+  </g>
+
+  <!-- Muted Title Card in SVG -->
+  <rect x="24" y="24" width="220" height="48" rx="8" fill="#0f172a" opacity="0.85" />
+  <text x="38" y="46" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">MAHABALESHWAR</text>
+  <text x="38" y="62" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#38bdf8">Panchgani & Pratapgad Tour</text>
+</svg>

@@ -1,0 +1,11 @@
+# Swami Tours & Travels - Netlify Clean URLs & Domain Rules
+# Canonical www to apex redirect (or vice versa)
+http://swamitoursandtravels.in/*   https://swamitoursandtravels.in/:splat   301!
+https://www.swamitoursandtravels.in/*  https://swamitoursandtravels.in/:splat  301!
+http://www.swamitoursandtravels.in/*   https://swamitoursandtravels.in/:splat  301!
+
+# Pretty URLs for core pages
+/thank-you              /thank-you.html             200
+/privacy-policy         /privacy-policy.html        200
+/terms-and-conditions   /terms-and-conditions.html  200
+/disclaimer             /disclaimer.html            200

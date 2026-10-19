@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "maruti-suzuki-ertiga-cab-rental",
+    "name": "Maruti Suzuki Ertiga (Black MPV)",
+    "type": "6+1 Seater Premium MPV",
+    "rate_km": "\u20b916 / \u20b917 per km",
+    "capacity": "6 Passengers + 1 Chauffeur",
+    "headline": "Black Maruti Ertiga Cab Rental & Outstation Hire",
+    "title": "Maruti Suzuki Ertiga Cab Rental | Black 6+1 MPV | Swami Tours",
+    "desc": "Rent luxury Black Maruti Suzuki Ertiga (6+1 seater MPV) for outstation travel, family vacations, airport transfers across Maharashtra & Konkan at \u20b916/km.",
+    "features": [
+      "Powerful Dual Air Conditioning (Front & Rear Vents)",
+      "Plush Captain / Reclining Seating with ample legroom",
+      "High luggage boot space for 3-4 large suitcases",
+      "USB phone chargers & Bluetooth premium surround sound",
+      "Smooth suspension engineered for Konkan ghats and long highways"
+    ],
+    "best_for": "Family vacations, small group pilgrimages (Shirdi, Ashtavinayak), corporate airport transfers."
+  },
+  {
+    "slug": "maruti-suzuki-wagonr-cab-rental",
+    "name": "Maruti Suzuki WagonR (White Hatchback)",
+    "type": "4+1 Seater Economical AC Hatchback",
+    "rate_km": "\u20b914 per km",
+    "capacity": "4 Passengers + 1 Chauffeur",
+    "headline": "White Maruti WagonR Cab Rental - Budget Outstation Taxi",
+    "title": "Maruti WagonR Taxi Rental | Budget 4+1 AC Cab | Swami Tours",
+    "desc": "Book affordable White Maruti WagonR for budget outstation trips, local sightseeing, daily commutes in Guhagar, Chiplun, Mumbai, Pune at just \u20b914/km.",
+    "features": [
+      "Chilled AC with efficient cooling",
+      "Compact tall-boy stance for effortless city & village parking",
+      "Seats 4 passengers comfortably with boot space for standard luggage",
+      "Most economical per-km fare across Maharashtra",
+      "Sanitized and well-maintained interior"
+    ],
+    "best_for": "Solo travellers, couples, small families of 3-4, budget-conscious daily commutes."
+  },
+  {
+    "slug": "force-tempo-traveller-20-seater",
+    "name": "Force Tempo Traveller (20 Seater Luxury)",
+    "type": "20-Seater Luxury Minibus",
+    "rate_km": "\u20b926 / \u20b928 per km",
+    "capacity": "20 Passengers + 1 Driver + Helper",
+    "headline": "20-Seater Force Tempo Traveller Hire for Groups & Tours",
+    "title": "20 Seater Tempo Traveller Rental | Luxury Pushback AC | Swami Tours",
+    "desc": "Rent pristine 20-Seater Force Tempo Traveller with push-back seats, chilled dual AC, LED TV, audio system for wedding groups, Shirdi tours, Goa holidays.",
+    "features": [
+      "20 individual plush reclining pushback seats",
+      "High-roof cabin with full standing height and wide central aisle",
+      "Heavy-duty dual air conditioning unit for extreme summer comfort",
+      "Built-in LED TV & surround speaker system for entertainment",
+      "Dedicated rear and rooftop carrier for massive group luggage"
+    ],
+    "best_for": "Wedding party travel, family reunions, corporate offsites, temple pilgrimage tours."
+  },
+  {
+    "slug": "force-tempo-traveller-26-seater",
+    "name": "Force Tempo Traveller (26 Seater Minibus)",
+    "type": "26-Seater Executive Coach",
+    "rate_km": "\u20b934 / \u20b935 per km",
+    "capacity": "26 Passengers + 1 Driver + Helper",
+    "headline": "26-Seater Luxury Force Tempo Traveller Rental",
+    "title": "26 Seater Tempo Traveller Rental | Large Group Minibus | Swami Tours",
+    "desc": "Hire 26-Seater Force Tempo Traveller across Maharashtra for large wedding parties, school/college tours, Ashtavinayak darshan. Top luxury with experienced driver.",
+    "features": [
+      "26 comfortable reclining coach seats with seatbelts",
+      "Dual high-capacity air conditioning system covering every row",
+      "Reading lights, charging points, and wide panoramic windows",
+      "Heavy-duty suspension tuned for ghat roads and interstate travel",
+      "Commercial touring permit valid across Maharashtra and Goa"
+    ],
+    "best_for": "Large pilgrimage groups, school/college educational tours, massive wedding contingents."
+  }
+]

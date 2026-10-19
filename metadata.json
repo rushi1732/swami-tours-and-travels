@@ -1,0 +1,6 @@
+{
+  "name": "Swami Tours & Travels",
+  "description": "Premier car rental and luxury tempo traveller hire with curated tour packages across Maharashtra and India. Featuring black Ertiga, white WagonR, and 20 & 26 seater luxury tempo travellers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

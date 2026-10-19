@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ashSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c2d12" />
+      <stop offset="50%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+    <linearGradient id="templeStone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="100%" stop-color="#451a03" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#ashSky)" />
+  
+  <!-- Sacred Modak & Swastik Aura -->
+  <circle cx="300" cy="180" r="130" fill="#fef08a" opacity="0.3" />
+  
+  <!-- Traditional Hemadpanthi Temple Arch -->
+  <!-- Outer Arch -->
+  <path d="M 120 400 L 120 220 Q 300 100 480 220 L 480 400 Z" fill="url(#templeStone)" />
+  <!-- Inner Arch Opening -->
+  <path d="M 180 400 L 180 240 Q 300 150 420 240 L 420 400 Z" fill="#292524" />
+
+  <!-- Ganesh Murti Iconic Silhouette (Sindoor Red/Orange) -->
+  <ellipse cx="300" cy="270" rx="36" ry="42" fill="#f97316" />
+  <circle cx="300" cy="225" r="26" fill="#f97316" />
+  <!-- Ears -->
+  <ellipse cx="270" cy="225" rx="14" ry="18" fill="#ea580c" />
+  <ellipse cx="330" cy="225" rx="14" ry="18" fill="#ea580c" />
+  <!-- Trunk (Vakratunda) -->
+  <path d="M 300 230 Q 304 255 316 260 Q 324 262 320 252" stroke="#ea580c" stroke-width="7" stroke-linecap="round" fill="none" />
+  <!-- Golden Crown (Mukut) -->
+  <path d="M 285 205 L 300 175 L 315 205 Z" fill="#fef08a" stroke="#d97706" stroke-width="2" />
+  <!-- Tika -->
+  <path d="M 296 215 H 304" stroke="#fef08a" stroke-width="2" />
+  <circle cx="300" cy="210" r="2" fill="#ef4444" />
+
+  <!-- Deepstambh (Pillar of Lights) Silhouette on sides -->
+  <rect x="60" y="220" width="24" height="180" rx="4" fill="#451a03" />
+  <polygon points="50,220 72,170 94,220" fill="#451a03" />
+  <rect x="516" y="220" width="24" height="180" rx="4" fill="#451a03" />
+  <polygon points="506,220 528,170 550,220" fill="#451a03" />
+
+  <!-- Title Card -->
+  <rect x="24" y="24" width="220" height="48" rx="8" fill="#0f172a" opacity="0.85" />
+  <text x="38" y="46" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">ASHTAVINAYAK YATRA</text>
+  <text x="38" y="62" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#fb923c">8 Sacred Ganapati Temples</text>
+</svg>

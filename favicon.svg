@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="30" fill="#0d0703" stroke="#ff7700" stroke-width="3"/>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#ffffff" stroke-width="0.8"/>
+  <circle cx="32" cy="22" r="12" fill="#ff7700" opacity="0.3"/>
+  <!-- Mountain peaks -->
+  <polygon points="12,26 22,14 30,26" fill="#7a2d04"/>
+  <polygon points="26,26 38,10 48,26" fill="#521d03"/>
+  <!-- Calligraphy स्वामी in orange -->
+  <text x="32" y="42" font-family="'Noto Sans Devanagari', 'Poppins', sans-serif" font-size="16" font-weight="900" fill="#ffffff" stroke="#000" stroke-width="2" text-anchor="middle">स्वामी</text>
+  <text x="32" y="42" font-family="'Noto Sans Devanagari', 'Poppins', sans-serif" font-size="16" font-weight="900" fill="#ff9900" text-anchor="middle">स्वामी</text>
+  <!-- Bottom banner -->
+  <rect x="10" y="48" width="44" height="8" rx="3" fill="#ff5500"/>
+  <text x="32" y="54" font-family="'Noto Sans Devanagari', sans-serif" font-size="5" font-weight="800" fill="#ffffff" text-anchor="middle">टुर्स अँड ट्रॅव्हल्स</text>
+</svg>

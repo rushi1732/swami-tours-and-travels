@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shirdiSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="40%" stop-color="#78350f" />
+      <stop offset="80%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="goldDome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#a16207" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#shirdiSky)" />
+  
+  <!-- Sacred Aura Halo -->
+  <circle cx="300" cy="200" r="140" fill="#fef08a" opacity="0.15" />
+  <circle cx="300" cy="200" r="80" fill="#fef08a" opacity="0.25" />
+
+  <!-- Temple Spire (Shikhara) Silhouette & Gold Details -->
+  <!-- Main Mandir Base -->
+  <rect x="180" y="260" width="240" height="140" fill="#292524" />
+  <!-- Pillars -->
+  <line x1="210" y1="270" x2="210" y2="400" stroke="#d97706" stroke-width="4" />
+  <line x1="270" y1="270" x2="270" y2="400" stroke="#d97706" stroke-width="4" />
+  <line x1="330" y1="270" x2="330" y2="400" stroke="#d97706" stroke-width="4" />
+  <line x1="390" y1="270" x2="390" y2="400" stroke="#d97706" stroke-width="4" />
+
+  <!-- Central Golden Kalash & Gopuram -->
+  <path d="M 230 260 L 300 130 L 370 260 Z" fill="url(#goldDome)" />
+  <path d="M 297 130 L 297 100 L 303 100 L 303 130 Z" fill="#fef08a" />
+  <circle cx="300" cy="95" r="7" fill="#fef08a" />
+  <path d="M 300 88 L 300 75" stroke="#f59e0b" stroke-width="3" />
+  <!-- Sacred Dhwaj Flag -->
+  <path d="M 300 75 L 325 83 L 300 90 Z" fill="#ea580c" />
+
+  <!-- Side Domes -->
+  <path d="M 170 260 L 210 180 L 240 260 Z" fill="#78350f" />
+  <path d="M 360 260 L 390 180 L 430 260 Z" fill="#78350f" />
+
+  <!-- Deepam / Diya Illuminations in Courtyard -->
+  <g fill="#fef08a">
+    <ellipse cx="240" cy="380" rx="8" ry="4" />
+    <path d="M 240 378 Q 240 368 243 368 Q 246 368 240 378 Z" fill="#ea580c" />
+    <ellipse cx="300" cy="380" rx="8" ry="4" />
+    <path d="M 300 378 Q 300 368 303 368 Q 306 368 300 378 Z" fill="#ea580c" />
+    <ellipse cx="360" cy="380" rx="8" ry="4" />
+    <path d="M 360 378 Q 360 368 363 368 Q 366 368 360 378 Z" fill="#ea580c" />
+  </g>
+
+  <!-- Title Card -->
+  <rect x="24" y="24" width="220" height="48" rx="8" fill="#0f172a" opacity="0.85" />
+  <text x="38" y="46" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">SHIRDI SAI BABA</text>
+  <text x="38" y="62" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#fbbf24">Shani Shingnapur Yatra</text>
+</svg>

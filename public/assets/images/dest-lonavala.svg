@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lvSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="40%" stop-color="#059669" />
+      <stop offset="75%" stop-color="#6ee7b7" />
+      <stop offset="100%" stop-color="#ecfdf5" />
+    </linearGradient>
+    <linearGradient id="waterfallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#lvSky)" />
+  
+  <!-- Sahyadri Mist & Clouds -->
+  <ellipse cx="200" cy="120" rx="140" ry="40" fill="#ffffff" opacity="0.6" />
+  <ellipse cx="400" cy="90" rx="160" ry="45" fill="#ffffff" opacity="0.5" />
+
+  <!-- Tiger Point Cliff Formations -->
+  <path d="M 0 180 L 160 120 L 260 210 L 380 150 L 520 220 L 600 160 L 600 400 L 0 400 Z" fill="#064e3b" />
+  <path d="M 120 180 L 220 160 L 300 240 L 460 190 L 600 260 L 600 400 L 0 400 Z" fill="#047857" opacity="0.8" />
+  
+  <!-- Cascading Monsoon Waterfall -->
+  <path d="M 280 165 L 290 165 L 305 320 L 275 320 Z" fill="url(#waterfallGrad)" opacity="0.85" />
+  <ellipse cx="290" cy="325" rx="35" ry="12" fill="#e0f2fe" opacity="0.9" />
+
+  <!-- Foreground lush plateau -->
+  <path d="M 0 320 Q 200 280 400 310 L 600 290 L 600 400 L 0 400 Z" fill="#022c22" />
+
+  <!-- Title Card -->
+  <rect x="24" y="24" width="220" height="48" rx="8" fill="#0f172a" opacity="0.85" />
+  <text x="38" y="46" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">LONAVALA & KHANDALA</text>
+  <text x="38" y="62" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#34d399">Waterfalls & Tiger Point Tour</text>
+</svg>

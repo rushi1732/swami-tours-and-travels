@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ajSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <linearGradient id="rockStone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#57534e" />
+      <stop offset="60%" stop-color="#44403c" />
+      <stop offset="100%" stop-color="#292524" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#ajSky)" />
+  
+  <!-- Horseshoe Gorge Cliff -->
+  <path d="M 0 120 Q 300 180 600 120 L 600 400 L 0 400 Z" fill="url(#rockStone)" />
+  <path d="M 40 180 Q 300 230 560 180 L 560 400 L 40 400 Z" fill="#292524" />
+
+  <!-- Cave 19 Chaitya Hall Horseshoe Window (Sun Window) Arch -->
+  <path d="M 220 320 L 220 220 Q 300 140 380 220 L 380 320 Z" fill="#1c1917" stroke="#78716c" stroke-width="4" />
+  <!-- Inner Stupa glow -->
+  <ellipse cx="300" cy="275" rx="35" ry="45" fill="#f59e0b" opacity="0.3" />
+  <ellipse cx="300" cy="285" rx="20" ry="25" fill="#f59e0b" opacity="0.6" />
+  
+  <!-- Carved Pillars on Cliff Face -->
+  <line x1="160" y1="230" x2="160" y2="340" stroke="#78716c" stroke-width="6" />
+  <line x1="185" y1="230" x2="185" y2="340" stroke="#78716c" stroke-width="6" />
+  <line x1="415" y1="230" x2="415" y2="340" stroke="#78716c" stroke-width="6" />
+  <line x1="440" y1="230" x2="440" y2="340" stroke="#78716c" stroke-width="6" />
+
+  <!-- Waghora River at bottom -->
+  <path d="M 0 350 Q 300 370 600 340 L 600 400 L 0 400 Z" fill="#0284c7" opacity="0.5" />
+
+  <!-- Title Card -->
+  <rect x="24" y="24" width="220" height="48" rx="8" fill="#0f172a" opacity="0.85" />
+  <text x="38" y="46" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">AJANTA & ELLORA</text>
+  <text x="38" y="62" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#cbd5e1">UNESCO World Heritage Caves</text>
+</svg>

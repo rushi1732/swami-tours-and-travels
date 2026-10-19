@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- Daylight Background matching Ertiga.png -->
+    <linearGradient id="ertigaSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="50%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+
+    <!-- Pearl Midnight Black Metallic Car Body -->
+    <linearGradient id="pearlBlack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="25%" stop-color="#1e293b"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Glossy Highlight Reflecting Sky and Daylight -->
+    <linearGradient id="glossHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b" stop-opacity="0.2"/>
+      <stop offset="35%" stop-color="#e2e8f0" stop-opacity="0.85"/>
+      <stop offset="65%" stop-color="#cbd5e1" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#475569" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Chrome Metallic Grille -->
+    <linearGradient id="chromeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="25%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="75%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+
+    <!-- Stone Pavers Gradient -->
+    <linearGradient id="paversGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <filter id="carShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: Modern Architectural Courtyard matching Ertiga.png -->
+  <!-- Sky -->
+  <rect x="0" y="0" width="800" height="260" fill="url(#ertigaSky)"/>
+  
+  <!-- Architectural Estate Building Facade -->
+  <rect x="0" y="40" width="800" height="220" fill="#e2e8f0"/>
+  <!-- Stone Wall Panels -->
+  <rect x="40" y="60" width="220" height="180" fill="#cbd5e1" opacity="0.6"/>
+  <rect x="280" y="40" width="280" height="200" fill="#94a3b8" opacity="0.4"/>
+  <rect x="580" y="70" width="220" height="170" fill="#cbd5e1" opacity="0.5"/>
+  <!-- Windows on Building -->
+  <rect x="320" y="70" width="90" height="120" fill="#334155" opacity="0.4"/>
+  <rect x="430" y="70" width="90" height="120" fill="#334155" opacity="0.4"/>
+
+  <!-- Green Garden Trees in Background -->
+  <circle cx="120" cy="180" r="70" fill="#15803d" opacity="0.8"/>
+  <circle cx="160" cy="170" r="60" fill="#16a34a" opacity="0.7"/>
+  <circle cx="680" cy="170" r="75" fill="#15803d" opacity="0.8"/>
+  <circle cx="730" cy="180" r="65" fill="#16a34a" opacity="0.7"/>
+
+  <!-- Paved Stone Courtyard Terrace Floor -->
+  <rect x="0" y="250" width="800" height="250" fill="url(#paversGrad)"/>
+  <!-- Paver Tile Grid Lines -->
+  <g stroke="#64748b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="290" x2="800" y2="290"/>
+    <line x1="0" y1="340" x2="800" y2="340"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="470" x2="800" y2="470"/>
+    <line x1="150" y1="250" x2="80" y2="500"/>
+    <line x1="320" y1="250" x2="260" y2="500"/>
+    <line x1="500" y1="250" x2="480" y2="500"/>
+    <line x1="680" y1="250" x2="710" y2="500"/>
+  </g>
+
+  <!-- CAR CAST SHADOW -->
+  <ellipse cx="400" cy="425" rx="340" ry="24" fill="#000000" opacity="0.75" filter="url(#carShadow)"/>
+
+  <!-- MARUTI SUZUKI ERTIGA (Pearl Midnight Black) -->
+  <g transform="translate(40, 60)">
+    
+    <!-- Main Chassis & Body Silhouette -->
+    <!-- Rear & Roofline to Hood -->
+    <path d="M 640 330 
+             L 660 300 
+             C 670 260, 665 210, 650 170 
+             C 630 130, 580 115, 520 110 
+             L 290 115 
+             C 240 120, 190 145, 140 195 
+             L 70 235 
+             C 50 250, 40 270, 42 295 
+             L 50 335 
+             C 55 350, 75 355, 105 355 
+             L 130 355 
+             A 58 58 0 0 0 245 355 
+             L 475 355 
+             A 58 58 0 0 0 590 355 
+             L 640 355 
+             C 655 355, 660 345, 640 330 Z" 
+          fill="url(#pearlBlack)" stroke="#090d16" stroke-width="2"/>
+
+    <!-- Glossy Shoulder Crease & Roof Reflection -->
+    <path d="M 650 170 C 580 120, 310 120, 140 195 L 70 235 L 75 250 C 145 205, 310 135, 640 180 Z" 
+          fill="url(#glossHighlight)" opacity="0.6"/>
+
+    <!-- Greenhouse / Windows Glass -->
+    <!-- Windshield -->
+    <polygon points="150,190 280,130 280,215 110,240" fill="#091829" stroke="#334155" stroke-width="2"/>
+    <polygon points="160,185 240,140 220,210 130,230" fill="rgba(255,255,255,0.22)"/>
+    <!-- Front Door Window -->
+    <polygon points="290,130 430,126 430,215 290,215" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <polygon points="310,140 390,135 380,205 300,205" fill="rgba(255,255,255,0.15)"/>
+    <!-- Rear Door Window -->
+    <polygon points="440,126 550,126 545,215 440,215" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+    <!-- Quarter Glass -->
+    <polygon points="560,128 630,165 620,215 555,215" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+
+    <!-- Window Rain Visors / Chrome Weather Strip -->
+    <path d="M 150 188 L 635 162" stroke="url(#chromeGrad)" stroke-width="3" fill="none"/>
+    <path d="M 110 242 L 625 217" stroke="url(#chromeGrad)" stroke-width="3" fill="none"/>
+
+    <!-- Front Facelift: Chrome Winged Grille -->
+    <polygon points="45,280 135,270 130,325 50,330" fill="#0a0e17"/>
+    <!-- Chrome Studded Mesh Grille -->
+    <path d="M 52 285 L 128 277 L 124 320 L 55 324 Z" fill="none" stroke="url(#chromeGrad)" stroke-width="4"/>
+    <line x1="60" y1="295" x2="122" y2="290" stroke="url(#chromeGrad)" stroke-width="2"/>
+    <line x1="62" y1="307" x2="120" y2="303" stroke="url(#chromeGrad)" stroke-width="2"/>
+    
+    <!-- Suzuki Chrome Badge -->
+    <g transform="translate(85, 295)">
+      <ellipse cx="4" cy="5" rx="10" ry="7" fill="none" stroke="url(#chromeGrad)" stroke-width="2.5"/>
+      <path d="M 0 0 L 8 2 L 0 10 L 8 12" stroke="url(#chromeGrad)" stroke-width="2.5" fill="none"/>
+    </g>
+
+    <!-- Front Plate: "ERTIGA" -->
+    <rect x="58" y="328" width="68" height="18" rx="2" fill="#090d16" stroke="#475569" stroke-width="1.5"/>
+    <text x="92" y="341" font-family="'Outfit', sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">
+      ERTIGA
+    </text>
+
+    <!-- Swept-Back Projector Headlights -->
+    <polygon points="128,245 180,240 170,278 125,275" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+    <polygon points="135,248 165,245 158,270 132,268" fill="#38bdf8" opacity="0.6"/>
+    <circle cx="152" cy="258" r="6" fill="#ffffff"/>
+
+    <!-- Fog Lamps in Lower Bumper -->
+    <polygon points="65,348 95,346 90,364 68,364" fill="#0a0a0a"/>
+    <circle cx="80" cy="355" r="4.5" fill="#fef08a"/>
+
+    <!-- Chrome Door Handles -->
+    <rect x="320" y="222" width="24" height="6" rx="2" fill="url(#chromeGrad)"/>
+    <rect x="460" y="222" width="24" height="6" rx="2" fill="url(#chromeGrad)"/>
+    <!-- Chrome Side Body Lower Cladding Strip -->
+    <line x1="250" y1="340" x2="470" y2="340" stroke="url(#chromeGrad)" stroke-width="3"/>
+
+    <!-- WHEEL 1 (Front Alloy Wheel) -->
+    <g transform="translate(188, 355)">
+      <circle cx="0" cy="0" r="54" fill="#090d16"/>
+      <circle cx="0" cy="0" r="46" fill="#1e293b" stroke="#475569" stroke-width="6"/>
+      <!-- Precision Cut Multi-Spoke Alloy -->
+      <circle cx="0" cy="0" r="32" fill="#0f172a" stroke="url(#chromeGrad)" stroke-width="3"/>
+      <line x1="-28" y1="0" x2="28" y2="0" stroke="url(#chromeGrad)" stroke-width="3"/>
+      <line x1="0" y1="-28" x2="0" y2="28" stroke="url(#chromeGrad)" stroke-width="3"/>
+      <line x1="-20" y1="-20" x2="20" y2="20" stroke="url(#chromeGrad)" stroke-width="3"/>
+      <line x1="-20" y1="20" x2="20" y2="-20" stroke="url(#chromeGrad)" stroke-width="3"/>
+      <circle cx="0" cy="0" r="10" fill="url(#chromeGrad)"/>
+    </g>
+
+    <!-- WHEEL 2 (Rear Alloy Wheel) -->
+    <g transform="translate(535, 355)">
+      <circle cx="0" cy="0" r="54" fill="#090d16"/>
+      <circle cx="0" cy="0" r="46" fill="#1e293b" stroke="#475569" stroke-width="6"/>
+      <circle cx="0" cy="0" r="32" fill="#0f172a" stroke="url(#chromeGrad)" stroke-width="3"/>
+      <line x1="-28" y1="0" x2="28" y2="0" stroke="url(#chromeGrad)" stroke-width="3"/>
+      <line x1="0" y1="-28" x2="0" y2="28" stroke="url(#chromeGrad)" stroke-width="3"/>
+      <line x1="-20" y1="-20" x2="20" y2="20" stroke="url(#chromeGrad)" stroke-width="3"/>
+      <line x1="-20" y1="20" x2="20" y2="-20" stroke="url(#chromeGrad)" stroke-width="3"/>
+      <circle cx="0" cy="0" r="10" fill="url(#chromeGrad)"/>
+    </g>
+
+    <!-- Vertical Ruby Red Taillight on Rear -->
+    <polygon points="650,210 665,225 660,285 648,275" fill="#ef4444" stroke="#991b1b" stroke-width="1.5"/>
+
+  </g>
+</svg>

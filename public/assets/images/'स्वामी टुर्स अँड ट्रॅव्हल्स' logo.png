@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Orange & Amber Gradients matching User Logo -->
+    <linearGradient id="logoOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9900"/>
+      <stop offset="35%" stop-color="#ff6600"/>
+      <stop offset="100%" stop-color="#d63b00"/>
+    </linearGradient>
+
+    <linearGradient id="sunGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffaa00"/>
+      <stop offset="100%" stop-color="#ff4400"/>
+    </linearGradient>
+
+    <linearGradient id="skyGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#3d1502"/>
+      <stop offset="60%" stop-color="#7a2d04"/>
+      <stop offset="100%" stop-color="#0a0502"/>
+    </linearGradient>
+
+    <linearGradient id="busGrad" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#ff8800"/>
+      <stop offset="50%" stop-color="#ff5500"/>
+      <stop offset="100%" stop-color="#cc3300"/>
+    </linearGradient>
+
+    <linearGradient id="carWhiteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <linearGradient id="textGloss" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffc83b"/>
+      <stop offset="30%" stop-color="#ff8400"/>
+      <stop offset="70%" stop-color="#eb4e00"/>
+      <stop offset="100%" stop-color="#b82800"/>
+    </linearGradient>
+
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+
+    <filter id="textGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Outer Badge with Double Orange Border -->
+  <circle cx="300" cy="300" r="285" fill="#0d0703" stroke="url(#logoOrangeGrad)" stroke-width="22" filter="url(#badgeShadow)"/>
+  <circle cx="300" cy="300" r="270" fill="none" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="300" cy="300" r="264" fill="none" stroke="url(#logoOrangeGrad)" stroke-width="6"/>
+
+  <!-- Clip Path to Circle -->
+  <clipPath id="circleClip">
+    <circle cx="300" cy="300" r="260"/>
+  </clipPath>
+
+  <g clip-path="url(#circleClip)">
+    <!-- Sky Background -->
+    <rect x="30" y="30" width="540" height="540" fill="url(#skyGrad)"/>
+
+    <!-- Sunset Sun in Center Horizon -->
+    <circle cx="300" cy="220" r="105" fill="url(#sunGrad)" opacity="0.95"/>
+    <circle cx="300" cy="220" r="125" fill="#ff7700" opacity="0.25"/>
+
+    <!-- Mountain Peaks in Background -->
+    <!-- Far mountains -->
+    <polygon points="170,250 260,130 330,250" fill="#4a1505"/>
+    <polygon points="260,130 280,180 330,250" fill="#ff9900" opacity="0.6"/> <!-- snow/light reflection -->
+    <polygon points="280,250 380,95 470,250" fill="#3a1003"/>
+    <polygon points="380,95 400,160 470,250" fill="#ff7700" opacity="0.7"/> <!-- peak highlight -->
+    <polygon points="400,250 490,140 550,250" fill="#250901"/>
+
+    <!-- Birds Flying into Sunset -->
+    <path d="M 230 110 Q 237 104 244 110 Q 251 104 258 110" stroke="#1a0701" stroke-width="2.5" fill="none"/>
+    <path d="M 255 125 Q 260 120 265 125 Q 270 120 275 125" stroke="#1a0701" stroke-width="2" fill="none"/>
+    <path d="M 240 135 Q 244 131 248 135 Q 252 131 256 135" stroke="#1a0701" stroke-width="1.8" fill="none"/>
+
+    <!-- Road Curving from Distance to Foreground -->
+    <path d="M 290 230 C 270 290, 340 330, 200 460 L 400 460 C 370 340, 310 290, 310 230 Z" fill="#1e1e1e"/>
+    <!-- Yellow/White Road Markings -->
+    <path d="M 300 235 C 290 280, 325 325, 300 460" stroke="#facc15" stroke-width="6" stroke-dasharray="16,12" fill="none"/>
+
+    <!-- LEFT VEHICLE: Orange Luxury Tourist Bus -->
+    <g transform="translate(60, 115) scale(0.72)">
+      <!-- Bus Body Shadow -->
+      <ellipse cx="230" cy="275" rx="140" ry="20" fill="rgba(0,0,0,0.6)"/>
+      <!-- Main Bus Body -->
+      <path d="M 120 230 L 140 70 C 145 50, 160 40, 200 40 L 330 70 C 345 75, 350 90, 350 110 L 340 230 C 340 245, 330 255, 310 255 L 140 255 C 125 255, 120 245, 120 230 Z" 
+            fill="url(#busGrad)" stroke="#1a0701" stroke-width="3"/>
+      <!-- Windshield -->
+      <path d="M 148 75 C 150 65, 160 55, 190 55 L 315 78 C 325 82, 330 90, 330 105 L 325 155 L 140 155 Z" 
+            fill="#091829" stroke="#334155" stroke-width="2"/>
+      <!-- Windshield Reflection -->
+      <polygon points="160,65 210,65 180,150 145,150" fill="rgba(255,255,255,0.2)"/>
+      <!-- Side Windows with Passenger Silhouettes -->
+      <rect x="250" y="80" width="70" height="40" rx="4" fill="#0f172a"/>
+      <!-- White Aerodynamic Swoosh Decal -->
+      <path d="M 125 215 C 180 200, 260 160, 340 145 L 340 165 C 260 180, 180 220, 125 235 Z" fill="#ffffff"/>
+      <path d="M 125 235 C 180 220, 260 180, 340 165 L 340 180 C 260 195, 180 235, 125 248 Z" fill="#ffffff" opacity="0.8"/>
+      <!-- Front Grille & Headlights -->
+      <rect x="150" y="180" width="160" height="45" rx="6" fill="#111827"/>
+      <!-- Headlights -->
+      <polygon points="142,175 165,178 160,200 138,190" fill="#fef08a" filter="url(#textGlow)"/>
+      <polygon points="318,178 340,175 342,190 320,200" fill="#fef08a" filter="url(#textGlow)"/>
+      <!-- Bumper & Wheels -->
+      <circle cx="165" cy="255" r="26" fill="#171717" stroke="#525252" stroke-width="6"/>
+      <circle cx="310" cy="255" r="26" fill="#171717" stroke="#525252" stroke-width="6"/>
+      <!-- Mirrors -->
+      <path d="M 140 70 L 115 85 L 118 105 L 138 95 Z" fill="#ea580c"/>
+    </g>
+
+    <!-- RIGHT VEHICLE: White Luxury SUV / Ertiga / Innova -->
+    <g transform="translate(325, 185) scale(0.66)">
+      <!-- Car Shadow -->
+      <ellipse cx="190" cy="255" rx="130" ry="18" fill="rgba(0,0,0,0.6)"/>
+      <!-- Car Body -->
+      <path d="M 90 220 L 115 130 C 120 110, 135 90, 170 85 L 260 90 C 285 92, 300 105, 305 125 L 320 220 C 322 235, 310 245, 295 245 L 105 245 C 95 245, 90 235, 90 220 Z" 
+            fill="url(#carWhiteGrad)" stroke="#1a0701" stroke-width="3"/>
+      <!-- Windshield -->
+      <polygon points="125,125 165,95 250,98 285,128 280,160 120,160" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+      <polygon points="140,110 180,100 160,155 130,155" fill="rgba(255,255,255,0.3)"/>
+      <!-- Front Grille with Logo -->
+      <rect x="145" y="175" width="125" height="35" rx="4" fill="#0f172a"/>
+      <!-- Chrome Grille slats -->
+      <line x1="155" y1="185" x2="260" y2="185" stroke="#94a3b8" stroke-width="2.5"/>
+      <line x1="155" y1="195" x2="260" y2="195" stroke="#94a3b8" stroke-width="2.5"/>
+      <!-- Toyota / Suzuki Badge -->
+      <ellipse cx="207" cy="190" rx="9" ry="6" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <!-- Headlights -->
+      <polygon points="115,168 145,172 140,195 110,188" fill="#f8fafc"/>
+      <polygon points="270,172 300,168 305,188 275,195" fill="#f8fafc"/>
+      <!-- Orange Side Accent Graphic -->
+      <path d="M 95 200 C 130 190, 190 170, 230 160 L 230 170 C 190 180, 130 200, 95 210 Z" fill="#f97316"/>
+      <!-- Wheels -->
+      <circle cx="130" cy="242" r="24" fill="#0f172a" stroke="#64748b" stroke-width="5"/>
+      <circle cx="280" cy="242" r="24" fill="#0f172a" stroke="#64748b" stroke-width="5"/>
+    </g>
+
+    <!-- Tilak / Saffron Symbol on Top of "स्वामी" -->
+    <g transform="translate(300, 290)">
+      <path d="M 0 -22 C -8 -15, -10 -5, 0 8 C 10 -5, 8 -15, 0 -22 Z" fill="#ff5500"/>
+      <circle cx="0" cy="-2" r="3.5" fill="#fef08a"/>
+      <!-- Twin wings on Tilak base -->
+      <path d="M -16 -4 C -28 -7, -35 -2, -40 2 C -30 2, -22 1, -14 0 Z" fill="#ff7700"/>
+      <path d="M 16 -4 C 28 -7, 35 -2, 40 2 C 30 2, 22 1, 14 0 Z" fill="#ff7700"/>
+    </g>
+
+    <!-- Main 3D Orange Marathi Calligraphy: "स्वामी" -->
+    <g filter="url(#textGlow)">
+      <!-- Saffron / Orange Winged Swoosh behind text -->
+      <path d="M 70 380 C 120 330, 240 310, 300 310 C 360 310, 480 330, 530 380 C 470 350, 370 335, 300 335 C 230 335, 130 350, 70 380 Z" 
+            fill="url(#logoOrangeGrad)"/>
+
+      <!-- 3D Shadow Layer for "स्वामी" -->
+      <text x="302" y="407" font-family="'Noto Sans Devanagari', 'Poppins', sans-serif" font-size="112" font-weight="900" 
+            fill="#450a0a" text-anchor="middle" letter-spacing="1">
+        स्वामी
+      </text>
+
+      <!-- White Outline / Stroke Layer -->
+      <text x="300" y="405" font-family="'Noto Sans Devanagari', 'Poppins', sans-serif" font-size="112" font-weight="900" 
+            fill="none" stroke="#ffffff" stroke-width="12" stroke-linejoin="round" text-anchor="middle" letter-spacing="1">
+        स्वामी
+      </text>
+
+      <!-- Front Glossy Orange Layer -->
+      <text x="300" y="405" font-family="'Noto Sans Devanagari', 'Poppins', sans-serif" font-size="112" font-weight="900" 
+            fill="url(#textGloss)" stroke="#9a3412" stroke-width="2" text-anchor="middle" letter-spacing="1">
+        स्वामी
+      </text>
+    </g>
+
+    <!-- Bottom Curved Dark Banner with "टुर्स अँड ट्रॅव्हल्स" -->
+    <path d="M 100 445 C 190 430, 410 430, 500 445 C 520 480, 510 520, 300 535 C 90 520, 80 480, 100 445 Z" 
+          fill="#0a0502" stroke="url(#logoOrangeGrad)" stroke-width="4"/>
+
+    <!-- Bottom White Text: "टुर्स अँड ट्रॅव्हल्स" -->
+    <text x="300" y="492" font-family="'Noto Sans Devanagari', 'Poppins', sans-serif" font-size="34" font-weight="800" 
+          fill="#ffffff" text-anchor="middle" letter-spacing="2">
+      टुर्स अँड ट्रॅव्हल्स
+    </text>
+
+    <!-- Bottom Small Accent Flourish -->
+    <path d="M 220 508 C 260 514, 340 514, 380 508" stroke="#ff7700" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="300" cy="510" r="3" fill="#ffaa00"/>
+  </g>
+</svg>
