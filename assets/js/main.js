@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initBookingForm();
   initFeedbackModal();
   initScrollSpy();
+  initScrollReveal();
+  initHeroParallax();
+  initSmoothScrollLinks();
 });
 
 // -----------------------------------------------------------------------------
@@ -2220,5 +2223,108 @@ function initDeveloperCreditModal() {
     if (e.key === 'Escape' && modal.style.display === 'flex') {
       closeModal();
     }
+  });
+}
+
+// -----------------------------------------------------------------------------
+// 10. Premium Luxury Animations & Smooth Interactions
+// -----------------------------------------------------------------------------
+function initScrollReveal() {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  const targets = document.querySelectorAll(
+    '.section-header, .fleet-card, .estimator-card, .service-card, .package-card, .testimonial-card, .booking-container-card, .faq-item, .footer-grid > div'
+  );
+
+  if (!targets.length || !('IntersectionObserver' in window)) return;
+
+  // Assign stagger classes to sibling card grids
+  const assignStagger = (selector, prefix = 'reveal-delay-') => {
+    document.querySelectorAll(selector).forEach(container => {
+      const items = container.children;
+      Array.from(items).forEach((item, idx) => {
+        const delayStep = (idx % 4) + 1;
+        item.classList.add(`${prefix}${delayStep}`);
+      });
+    });
+  };
+
+  assignStagger('.fleet-grid');
+  assignStagger('.services-grid');
+  assignStagger('.packages-grid');
+  assignStagger('.testimonials-grid');
+
+  targets.forEach(el => el.classList.add('reveal-on-scroll'));
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    rootMargin: '0px 0px -40px 0px',
+    threshold: 0.12
+  });
+
+  targets.forEach(el => observer.observe(el));
+}
+
+function initHeroParallax() {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+  // Disable on mobile/touch screens for maximum battery and performance
+  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) return;
+
+  const hero = document.querySelector('.hero-section');
+  if (!hero) return;
+
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollY <= hero.offsetHeight) {
+          hero.style.backgroundPositionY = `${scrollY * 0.28}px`;
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+}
+
+function initSmoothScrollLinks() {
+  const links = document.querySelectorAll('a[href^="#"]');
+  const header = document.querySelector('.site-header');
+
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (!href || href === '#' || href.length < 2) return;
+
+      const targetEl = document.querySelector(href);
+      if (!targetEl) return;
+
+      e.preventDefault();
+
+      const headerHeight = header ? header.offsetHeight : 80;
+      const targetRect = targetEl.getBoundingClientRect();
+      const targetPosition = targetRect.top + window.pageYOffset - headerHeight - 10;
+
+      window.scrollTo({
+        top: Math.max(0, targetPosition),
+        behavior: 'smooth'
+      });
+
+      // Update URL hash smoothly without page jump
+      if (history.pushState) {
+        history.pushState(null, null, href);
+      }
+    });
   });
 }
