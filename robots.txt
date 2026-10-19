@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Allow: /routes/
+Allow: /seo/pickups/
+Allow: /seo/vehicles/
+Allow: /seo/packages/
 
 Sitemap: https://swamitoursandtravels.in/sitemap.xml
