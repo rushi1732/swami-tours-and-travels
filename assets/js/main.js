@@ -2069,24 +2069,35 @@ function initQuickQuotePopup() {
 
   function closeModal() {
     modal.style.display = 'none';
+    modal.classList.remove('active');
     document.body.style.overflow = '';
   }
 
   function openModal() {
     modal.style.display = 'flex';
+    modal.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
 
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
   if (backdrop) backdrop.addEventListener('click', closeModal);
-
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.style.display === 'flex') {
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal || e.target === backdrop) {
       closeModal();
     }
   });
 
-  calcBtn.addEventListener('click', () => {
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && (modal.style.display === 'flex' || modal.classList.contains('active'))) {
+      closeModal();
+    }
+  });
+
+  calcBtn.addEventListener('click', (e) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     const pickup = document.getElementById('quick-pickup')?.value || 'Guhagar';
     const drop = document.getElementById('quick-drop')?.value || 'Mumbai';
     const vehicleKey = document.getElementById('quick-vehicle')?.value || 'black-ertiga';
