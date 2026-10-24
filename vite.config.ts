@@ -2,10 +2,45 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
+import {handleChatRequest, getPublicConfig} from './server/chat-handler.js';
+
+function swamiChatbotDevPlugin() {
+  return {
+    name: 'swami-chatbot-dev-api',
+    configureServer(server: any) {
+      server.middlewares.use(async (req: any, res: any, next: any) => {
+        if (req.url === '/api/chat' && req.method === 'POST') {
+          let bodyStr = '';
+          req.on('data', (chunk: any) => { bodyStr += chunk; });
+          req.on('end', async () => {
+            try {
+              const body = JSON.parse(bodyStr || '{}');
+              const clientIp = req.headers['x-forwarded-for'] || req.socket.remoteAddress || '127.0.0.1';
+              const result = await handleChatRequest(body, clientIp);
+              res.statusCode = result.status || 200;
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify(result));
+            } catch (err) {
+              res.statusCode = 500;
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify({ status: 500, error: 'Internal Error', reply: 'क्षमस्व! सर्व्हर एरर.' }));
+            }
+          });
+        } else if (req.url === '/api/config' && req.method === 'GET') {
+          res.statusCode = 200;
+          res.setHeader('Content-Type', 'application/json');
+          res.end(JSON.stringify(getPublicConfig()));
+        } else {
+          next();
+        }
+      });
+    }
+  };
+}
 
 export default defineConfig(() => {
   return {
-    plugins: [react(), tailwindcss()],
+    plugins: [react(), tailwindcss(), swamiChatbotDevPlugin()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),

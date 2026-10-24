@@ -9,3 +9,5 @@ http://www.swamitoursandtravels.in/*   https://swamitoursandtravels.in/:splat  3
 /privacy-policy         /privacy-policy.html        200
 /terms-and-conditions   /terms-and-conditions.html  200
 /disclaimer             /disclaimer.html            200
+/api/chat               /.netlify/functions/chat    200
+
