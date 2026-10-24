@@ -2,7 +2,6 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
-import {handleChatRequest, getPublicConfig} from './server/chat-handler.js';
 
 function swamiChatbotDevPlugin() {
   return {
@@ -14,6 +13,7 @@ function swamiChatbotDevPlugin() {
           req.on('data', (chunk: any) => { bodyStr += chunk; });
           req.on('end', async () => {
             try {
+              const { handleChatRequest } = await import('./server/chat-handler.js');
               const body = JSON.parse(bodyStr || '{}');
               const clientIp = req.headers['x-forwarded-for'] || req.socket.remoteAddress || '127.0.0.1';
               const result = await handleChatRequest(body, clientIp);
@@ -27,9 +27,16 @@ function swamiChatbotDevPlugin() {
             }
           });
         } else if (req.url === '/api/config' && req.method === 'GET') {
-          res.statusCode = 200;
-          res.setHeader('Content-Type', 'application/json');
-          res.end(JSON.stringify(getPublicConfig()));
+          try {
+            const { getPublicConfig } = await import('./server/chat-handler.js');
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.end(JSON.stringify(getPublicConfig()));
+          } catch {
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            res.end(JSON.stringify({ whatsappNumber: '917083808483' }));
+          }
         } else {
           next();
         }

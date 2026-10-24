@@ -29,20 +29,19 @@ function isRateLimited(ip) {
     return false;
   }
 
+  // Lazy cleanup of expired IPs
+  if (ipRateMap.size > 200) {
+    for (const [key, val] of ipRateMap.entries()) {
+      if (now > val.resetTime) {
+        ipRateMap.delete(key);
+      }
+    }
+  }
+
   clientData.count += 1;
   ipRateMap.set(ip, clientData);
   return clientData.count > MAX_REQUESTS_PER_WINDOW;
 }
-
-// Clean up stale IP records every 5 minutes
-setInterval(() => {
-  const now = Date.now();
-  for (const [ip, data] of ipRateMap.entries()) {
-    if (now > data.resetTime) {
-      ipRateMap.delete(ip);
-    }
-  }
-}, 5 * 60 * 1000);
 
 /**
  * Verified Swami Tours & Travels System Prompt & Knowledge Base
